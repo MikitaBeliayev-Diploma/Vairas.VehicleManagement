@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="Vairas.VehicleManagement/Vairas.VehicleManagement.csproj" />
+  <Project Path="Vairas.VehicleManagement.Business/Vairas.VehicleManagement.Business.csproj" />
+  <Project Path="Vairas.VehicleManagement.Domain/Vairas.VehicleManagement.Domain.csproj" />
+  <Project Path="Vairas.VehicleManagement.Persistance/Vairas.VehicleManagement.Persistance.csproj" />
+  <Project Path="Vairas.VehicleManagement.Tests/Vairas.VehicleManagement.Tests.csproj" />
+</Solution>

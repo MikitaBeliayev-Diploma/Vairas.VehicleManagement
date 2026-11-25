@@ -1,0 +1,83 @@
+asyncapi: 3.0.0
+info:
+  title: Vairas Vehicle Management implemented events
+  version: 1.0.0
+  description: Transactional Outbox, at-least-once delivery. Delivery to a real Azure broker requires deployment verification. Events do not grant booking admission.
+channels:
+  vehicleActivated:
+    address: vairas.vehicle.activated.v1
+    description: Logical channel transported on Service Bus topic vairas-vehicle with eventType=VehicleActivated.
+    messages:
+      VehicleActivated:
+        $ref: '#/components/messages/VehicleActivated'
+  vehicleDeactivated:
+    address: vairas.vehicle.deactivated.v1
+    description: Logical channel transported on Service Bus topic vairas-vehicle with eventType=VehicleDeactivated.
+    messages:
+      VehicleDeactivated:
+        $ref: '#/components/messages/VehicleDeactivated'
+operations:
+  publishVehicleActivated:
+    action: send
+    channel:
+      $ref: '#/channels/vehicleActivated'
+    messages:
+      - $ref: '#/channels/vehicleActivated/messages/VehicleActivated'
+  publishVehicleDeactivated:
+    action: send
+    channel:
+      $ref: '#/channels/vehicleDeactivated'
+    messages:
+      - $ref: '#/channels/vehicleDeactivated/messages/VehicleDeactivated'
+components:
+  schemas:
+    IntegrationHeaders:
+      type: object
+      required: [eventId, eventType, eventVersion, occurredAt, producer, correlationId, aggregateId, aggregateVersion]
+      properties:
+        eventId: {type: string, format: uuid}
+        eventType: {type: string, enum: [VehicleActivated, VehicleDeactivated]}
+        eventVersion: {type: integer, enum: [1]}
+        occurredAt: {type: string, format: date-time}
+        producer: {type: string, enum: [vehicle]}
+        correlationId: {type: string}
+        aggregateId: {type: string, format: uuid}
+        aggregateVersion: {type: integer, minimum: 1}
+    VehicleActivatedPayload:
+      type: object
+      additionalProperties: false
+      required: [schoolId, branchId, vehicleId, effectiveAt]
+      properties:
+        schoolId: {type: string, format: uuid}
+        branchId: {type: string, format: uuid}
+        vehicleId: {type: string, format: uuid}
+        effectiveAt: {type: string, format: date-time}
+    VehicleDeactivatedPayload:
+      type: object
+      additionalProperties: false
+      required: [schoolId, branchId, vehicleId, effectiveAt, reason]
+      properties:
+        schoolId: {type: string, format: uuid}
+        branchId: {type: string, format: uuid}
+        vehicleId: {type: string, format: uuid}
+        effectiveAt: {type: string, format: date-time}
+        reason: {type: string, minLength: 1}
+  messages:
+    VehicleActivated:
+      name: VehicleActivated
+      contentType: application/json
+      headers:
+        $ref: '#/components/schemas/IntegrationHeaders'
+      payload:
+        $ref: '#/components/schemas/VehicleActivatedPayload'
+      correlationId:
+        location: $message.header#/correlationId
+    VehicleDeactivated:
+      name: VehicleDeactivated
+      contentType: application/json
+      headers:
+        $ref: '#/components/schemas/IntegrationHeaders'
+      payload:
+        $ref: '#/components/schemas/VehicleDeactivatedPayload'
+      correlationId:
+        location: $message.header#/correlationId

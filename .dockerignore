@@ -1,0 +1,10 @@
+**/bin
+**/obj
+**/TestResults
+.git
+.local
+.cache
+evidence
+deploy/*.parameters.json
+**/*.pfx
+**/*.user

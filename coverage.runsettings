@@ -1,0 +1,17 @@
+<RunSettings>
+  <DataCollectionRunSettings>
+    <DataCollectors>
+      <DataCollector friendlyName="XPlat Code Coverage">
+        <Configuration>
+          <Format>cobertura</Format>
+          <!-- Every assembly of this service (API, Business, Domain, Persistance); sibling services and packages are not measured here. -->
+          <Include>[Vairas.VehicleManagement*]*</Include>
+          <Exclude>[*Tests]*</Exclude>
+          <SkipAutoProps>true</SkipAutoProps>
+          <!-- Generated EF migrations and designer/snapshot files only; no business code is excluded. -->
+          <ExcludeByFile>**/Migrations/**,**/obj/**</ExcludeByFile>
+        </Configuration>
+      </DataCollector>
+    </DataCollectors>
+  </DataCollectionRunSettings>
+</RunSettings>
