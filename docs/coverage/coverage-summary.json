@@ -1,0 +1,620 @@
+{
+  "service": "Vairas.VehicleManagement",
+  "generated": "2026-11-25",
+  "tool": "coverlet (XPlat Code Coverage) via Backend/local/coverage.py",
+  "filter": "TestCategory!=Broker (broker tests need the Service Bus emulator and run in local/test_all.py)",
+  "threshold": 70,
+  "thresholdMet": true,
+  "total": {
+    "lines": 1490,
+    "covered": 1213,
+    "branches": 890,
+    "branchesCovered": 583,
+    "linePercent": 81.41,
+    "branchPercent": 65.51
+  },
+  "assemblies": {
+    "Vairas.VehicleManagement": {
+      "lines": 647,
+      "covered": 424,
+      "branches": 362,
+      "branchesCovered": 178,
+      "linePercent": 65.53,
+      "branchPercent": 49.17
+    },
+    "Vairas.VehicleManagement.Business": {
+      "lines": 657,
+      "covered": 616,
+      "branches": 460,
+      "branchesCovered": 347,
+      "linePercent": 93.76,
+      "branchPercent": 75.43
+    },
+    "Vairas.VehicleManagement.Domain": {
+      "lines": 2,
+      "covered": 1,
+      "branches": 0,
+      "branchesCovered": 0,
+      "linePercent": 50.0,
+      "branchPercent": 100.0
+    },
+    "Vairas.VehicleManagement.Persistance": {
+      "lines": 184,
+      "covered": 172,
+      "branches": 68,
+      "branchesCovered": 58,
+      "linePercent": 93.48,
+      "branchPercent": 85.29
+    }
+  },
+  "files": {
+    "Vairas.VehicleManagement.Business/VehicleService.VehicleSchedulingReads.cs": {
+      "lines": 10,
+      "covered": 0,
+      "branches": 2,
+      "branchesCovered": 0,
+      "linePercent": 0.0,
+      "branchPercent": 0.0
+    },
+    "Workers/ServiceBusPublisher.cs": {
+      "lines": 31,
+      "covered": 0,
+      "branches": 16,
+      "branchesCovered": 0,
+      "linePercent": 0.0,
+      "branchPercent": 0.0
+    },
+    "Startup/DatabaseMigration.cs": {
+      "lines": 7,
+      "covered": 0,
+      "branches": 4,
+      "branchesCovered": 0,
+      "linePercent": 0.0,
+      "branchPercent": 0.0
+    },
+    "Startup/DatabaseProvisioning.cs": {
+      "lines": 25,
+      "covered": 0,
+      "branches": 26,
+      "branchesCovered": 0,
+      "linePercent": 0.0,
+      "branchPercent": 0.0
+    },
+    "Integrations/DependencyCorrelationHandler.cs": {
+      "lines": 9,
+      "covered": 0,
+      "branches": 6,
+      "branchesCovered": 0,
+      "linePercent": 0.0,
+      "branchPercent": 0.0
+    },
+    "Integrations/DependencyTransport.cs": {
+      "lines": 25,
+      "covered": 0,
+      "branches": 18,
+      "branchesCovered": 0,
+      "linePercent": 0.0,
+      "branchPercent": 0.0
+    },
+    "Integrations/SchedulingGate.cs": {
+      "lines": 53,
+      "covered": 0,
+      "branches": 28,
+      "branchesCovered": 0,
+      "linePercent": 0.0,
+      "branchPercent": 0.0
+    },
+    "Integrations/SchoolAuthorityClient.cs": {
+      "lines": 2,
+      "covered": 0,
+      "branches": 0,
+      "branchesCovered": 0,
+      "linePercent": 0.0,
+      "branchPercent": 100.0
+    },
+    "Integrations/UserProfilesClient.cs": {
+      "lines": 9,
+      "covered": 0,
+      "branches": 4,
+      "branchesCovered": 0,
+      "linePercent": 0.0,
+      "branchPercent": 0.0
+    },
+    "Vairas.VehicleManagement.Domain/Maintenance.cs": {
+      "lines": 1,
+      "covered": 0,
+      "branches": 0,
+      "branchesCovered": 0,
+      "linePercent": 0.0,
+      "branchPercent": 100.0
+    },
+    "Vairas.VehicleManagement.Persistance/DesignTimeFactory.cs": {
+      "lines": 1,
+      "covered": 0,
+      "branches": 2,
+      "branchesCovered": 0,
+      "linePercent": 0.0,
+      "branchPercent": 0.0
+    },
+    "Workers/BackgroundWorkers.cs": {
+      "lines": 38,
+      "covered": 7,
+      "branches": 16,
+      "branchesCovered": 1,
+      "linePercent": 18.42,
+      "branchPercent": 6.25
+    },
+    "Vairas.VehicleManagement.Business/VehicleErrors.cs": {
+      "lines": 12,
+      "covered": 5,
+      "branches": 14,
+      "branchesCovered": 0,
+      "linePercent": 41.67,
+      "branchPercent": 0.0
+    },
+    "Controllers/InternalVehiclesController.cs": {
+      "lines": 4,
+      "covered": 2,
+      "branches": 0,
+      "branchesCovered": 0,
+      "linePercent": 50.0,
+      "branchPercent": 100.0
+    },
+    "Configuration/Options/DependencyOptionsValidator.cs": {
+      "lines": 7,
+      "covered": 5,
+      "branches": 6,
+      "branchesCovered": 3,
+      "linePercent": 71.43,
+      "branchPercent": 50.0
+    },
+    "Configuration/Options/JwtOptionsValidator.cs": {
+      "lines": 8,
+      "covered": 6,
+      "branches": 10,
+      "branchesCovered": 5,
+      "linePercent": 75.0,
+      "branchPercent": 50.0
+    },
+    "HealthChecks/DatabaseReadiness.cs": {
+      "lines": 19,
+      "covered": 15,
+      "branches": 4,
+      "branchesCovered": 3,
+      "linePercent": 78.95,
+      "branchPercent": 75.0
+    },
+    "Controllers/VehiclesController.cs": {
+      "lines": 10,
+      "covered": 8,
+      "branches": 2,
+      "branchesCovered": 2,
+      "linePercent": 80.0,
+      "branchPercent": 100.0
+    },
+    "Integrations/WorkloadTokens.cs": {
+      "lines": 28,
+      "covered": 23,
+      "branches": 18,
+      "branchesCovered": 13,
+      "linePercent": 82.14,
+      "branchPercent": 72.22
+    },
+    "Vairas.VehicleManagement.Persistance/VehicleStore.cs": {
+      "lines": 43,
+      "covered": 36,
+      "branches": 20,
+      "branchesCovered": 16,
+      "linePercent": 83.72,
+      "branchPercent": 80.0
+    },
+    "Integrations/VehicleActorFactory.cs": {
+      "lines": 21,
+      "covered": 18,
+      "branches": 28,
+      "branchesCovered": 18,
+      "linePercent": 85.71,
+      "branchPercent": 64.29
+    },
+    "Vairas.VehicleManagement.Persistance/DatabaseExceptionTranslator.cs": {
+      "lines": 34,
+      "covered": 30,
+      "branches": 42,
+      "branchesCovered": 38,
+      "linePercent": 88.24,
+      "branchPercent": 90.48
+    },
+    "Controllers/VehicleOperationsController.cs": {
+      "lines": 9,
+      "covered": 8,
+      "branches": 2,
+      "branchesCovered": 1,
+      "linePercent": 88.89,
+      "branchPercent": 50.0
+    },
+    "Configuration/ConfigureTelemetry.cs": {
+      "lines": 9,
+      "covered": 8,
+      "branches": 2,
+      "branchesCovered": 1,
+      "linePercent": 88.89,
+      "branchPercent": 50.0
+    },
+    "Configuration/ConfigureAuthentication.cs": {
+      "lines": 56,
+      "covered": 50,
+      "branches": 8,
+      "branchesCovered": 5,
+      "linePercent": 89.29,
+      "branchPercent": 62.5
+    },
+    "Vairas.VehicleManagement.Business/VehicleService.Queries.cs": {
+      "lines": 78,
+      "covered": 72,
+      "branches": 46,
+      "branchesCovered": 41,
+      "linePercent": 92.31,
+      "branchPercent": 89.13
+    },
+    "Vairas.VehicleManagement.Business/VehicleTelemetry.cs": {
+      "lines": 13,
+      "covered": 12,
+      "branches": 0,
+      "branchesCovered": 0,
+      "linePercent": 92.31,
+      "branchPercent": 100.0
+    },
+    "Middleware/ApiExceptionHandler.cs": {
+      "lines": 29,
+      "covered": 27,
+      "branches": 30,
+      "branchesCovered": 28,
+      "linePercent": 93.1,
+      "branchPercent": 93.33
+    },
+    "Vairas.VehicleManagement.Business/StateChangeProcessor.cs": {
+      "lines": 146,
+      "covered": 136,
+      "branches": 146,
+      "branchesCovered": 101,
+      "linePercent": 93.15,
+      "branchPercent": 69.18
+    },
+    "Security/EntryHandler.cs": {
+      "lines": 18,
+      "covered": 17,
+      "branches": 20,
+      "branchesCovered": 18,
+      "linePercent": 94.44,
+      "branchPercent": 90.0
+    },
+    "Vairas.VehicleManagement.Business/VehicleService.Assignments.cs": {
+      "lines": 123,
+      "covered": 119,
+      "branches": 64,
+      "branchesCovered": 46,
+      "linePercent": 96.75,
+      "branchPercent": 71.88
+    },
+    "Vairas.VehicleManagement.Business/VehicleService.StateChanges.cs": {
+      "lines": 71,
+      "covered": 69,
+      "branches": 24,
+      "branchesCovered": 19,
+      "linePercent": 97.18,
+      "branchPercent": 79.17
+    },
+    "Vairas.VehicleManagement.Business/VehicleRules.cs": {
+      "lines": 47,
+      "covered": 46,
+      "branches": 110,
+      "branchesCovered": 94,
+      "linePercent": 97.87,
+      "branchPercent": 85.45
+    },
+    "Vairas.VehicleManagement.Business/Abstractions/ISchedulingGate.cs": {
+      "lines": 3,
+      "covered": 3,
+      "branches": 0,
+      "branchesCovered": 0,
+      "linePercent": 100.0,
+      "branchPercent": 100.0
+    },
+    "Vairas.VehicleManagement.Business/BadRequestException.cs": {
+      "lines": 1,
+      "covered": 1,
+      "branches": 2,
+      "branchesCovered": 2,
+      "linePercent": 100.0,
+      "branchPercent": 100.0
+    },
+    "Vairas.VehicleManagement.Business/BusinessException.cs": {
+      "lines": 1,
+      "covered": 1,
+      "branches": 0,
+      "branchesCovered": 0,
+      "linePercent": 100.0,
+      "branchPercent": 100.0
+    },
+    "Vairas.VehicleManagement.Business/ConflictException.cs": {
+      "lines": 1,
+      "covered": 1,
+      "branches": 2,
+      "branchesCovered": 2,
+      "linePercent": 100.0,
+      "branchPercent": 100.0
+    },
+    "Vairas.VehicleManagement.Business/ForbiddenException.cs": {
+      "lines": 1,
+      "covered": 1,
+      "branches": 2,
+      "branchesCovered": 2,
+      "linePercent": 100.0,
+      "branchPercent": 100.0
+    },
+    "Vairas.VehicleManagement.Business/NotFoundException.cs": {
+      "lines": 1,
+      "covered": 1,
+      "branches": 2,
+      "branchesCovered": 2,
+      "linePercent": 100.0,
+      "branchPercent": 100.0
+    },
+    "Vairas.VehicleManagement.Business/OutboxDispatcher.cs": {
+      "lines": 24,
+      "covered": 24,
+      "branches": 22,
+      "branchesCovered": 16,
+      "linePercent": 100.0,
+      "branchPercent": 72.73
+    },
+    "Vairas.VehicleManagement.Business/ServiceUnavailableException.cs": {
+      "lines": 1,
+      "covered": 1,
+      "branches": 2,
+      "branchesCovered": 2,
+      "linePercent": 100.0,
+      "branchPercent": 100.0
+    },
+    "Vairas.VehicleManagement.Business/UnauthorizedException.cs": {
+      "lines": 1,
+      "covered": 1,
+      "branches": 2,
+      "branchesCovered": 2,
+      "linePercent": 100.0,
+      "branchPercent": 100.0
+    },
+    "Vairas.VehicleManagement.Business/UnprocessableEntityException.cs": {
+      "lines": 1,
+      "covered": 1,
+      "branches": 2,
+      "branchesCovered": 2,
+      "linePercent": 100.0,
+      "branchPercent": 100.0
+    },
+    "Vairas.VehicleManagement.Business/VehicleService.cs": {
+      "lines": 52,
+      "covered": 52,
+      "branches": 12,
+      "branchesCovered": 10,
+      "linePercent": 100.0,
+      "branchPercent": 83.33
+    },
+    "Vairas.VehicleManagement.Business/VehicleService.Vehicles.cs": {
+      "lines": 70,
+      "covered": 70,
+      "branches": 6,
+      "branchesCovered": 6,
+      "linePercent": 100.0,
+      "branchPercent": 100.0
+    },
+    "Program.cs": {
+      "lines": 29,
+      "covered": 29,
+      "branches": 4,
+      "branchesCovered": 2,
+      "linePercent": 100.0,
+      "branchPercent": 50.0
+    },
+    "Middleware/CorrelationMiddleware.cs": {
+      "lines": 16,
+      "covered": 16,
+      "branches": 10,
+      "branchesCovered": 9,
+      "linePercent": 100.0,
+      "branchPercent": 90.0
+    },
+    "Middleware/Problems.cs": {
+      "lines": 12,
+      "covered": 12,
+      "branches": 0,
+      "branchesCovered": 0,
+      "linePercent": 100.0,
+      "branchPercent": 100.0
+    },
+    "Middleware/RequestLoggingMiddleware.cs": {
+      "lines": 9,
+      "covered": 9,
+      "branches": 4,
+      "branchesCovered": 4,
+      "linePercent": 100.0,
+      "branchPercent": 100.0
+    },
+    "Configuration/ApiDocumentTransformer.cs": {
+      "lines": 34,
+      "covered": 34,
+      "branches": 38,
+      "branchesCovered": 35,
+      "linePercent": 100.0,
+      "branchPercent": 92.11
+    },
+    "Configuration/CategoryCatalogue.cs": {
+      "lines": 15,
+      "covered": 15,
+      "branches": 26,
+      "branchesCovered": 16,
+      "linePercent": 100.0,
+      "branchPercent": 61.54
+    },
+    "Configuration/ConfigureAuthorization.cs": {
+      "lines": 11,
+      "covered": 11,
+      "branches": 2,
+      "branchesCovered": 2,
+      "linePercent": 100.0,
+      "branchPercent": 100.0
+    },
+    "Configuration/ConfigureDatabase.cs": {
+      "lines": 6,
+      "covered": 6,
+      "branches": 0,
+      "branchesCovered": 0,
+      "linePercent": 100.0,
+      "branchPercent": 100.0
+    },
+    "Configuration/ConfigureDependencyInjection.cs": {
+      "lines": 7,
+      "covered": 7,
+      "branches": 0,
+      "branchesCovered": 0,
+      "linePercent": 100.0,
+      "branchPercent": 100.0
+    },
+    "Configuration/ConfigureExceptionHandling.cs": {
+      "lines": 12,
+      "covered": 12,
+      "branches": 0,
+      "branchesCovered": 0,
+      "linePercent": 100.0,
+      "branchPercent": 100.0
+    },
+    "Configuration/ConfigureHealthChecks.cs": {
+      "lines": 9,
+      "covered": 9,
+      "branches": 0,
+      "branchesCovered": 0,
+      "linePercent": 100.0,
+      "branchPercent": 100.0
+    },
+    "Configuration/ConfigureHttpClients.cs": {
+      "lines": 13,
+      "covered": 13,
+      "branches": 0,
+      "branchesCovered": 0,
+      "linePercent": 100.0,
+      "branchPercent": 100.0
+    },
+    "Configuration/ConfigureJsonSerialization.cs": {
+      "lines": 14,
+      "covered": 14,
+      "branches": 0,
+      "branchesCovered": 0,
+      "linePercent": 100.0,
+      "branchPercent": 100.0
+    },
+    "Configuration/ConfigureLogging.cs": {
+      "lines": 5,
+      "covered": 5,
+      "branches": 0,
+      "branchesCovered": 0,
+      "linePercent": 100.0,
+      "branchPercent": 100.0
+    },
+    "Configuration/ConfigureMessageBroker.cs": {
+      "lines": 6,
+      "covered": 6,
+      "branches": 0,
+      "branchesCovered": 0,
+      "linePercent": 100.0,
+      "branchPercent": 100.0
+    },
+    "Configuration/ConfigureOpenApi.cs": {
+      "lines": 6,
+      "covered": 6,
+      "branches": 4,
+      "branchesCovered": 3,
+      "linePercent": 100.0,
+      "branchPercent": 75.0
+    },
+    "Configuration/ConfigureOptions.cs": {
+      "lines": 15,
+      "covered": 15,
+      "branches": 0,
+      "branchesCovered": 0,
+      "linePercent": 100.0,
+      "branchPercent": 100.0
+    },
+    "Configuration/Options/AllowedHostsValidator.cs": {
+      "lines": 3,
+      "covered": 3,
+      "branches": 14,
+      "branchesCovered": 3,
+      "linePercent": 100.0,
+      "branchPercent": 21.43
+    },
+    "Configuration/Options/CatalogueOptionsValidator.cs": {
+      "lines": 3,
+      "covered": 3,
+      "branches": 2,
+      "branchesCovered": 1,
+      "linePercent": 100.0,
+      "branchPercent": 50.0
+    },
+    "Configuration/Options/DatabaseOptionsValidator.cs": {
+      "lines": 3,
+      "covered": 3,
+      "branches": 2,
+      "branchesCovered": 1,
+      "linePercent": 100.0,
+      "branchPercent": 50.0
+    },
+    "Configuration/Options/OriginValidation.cs": {
+      "lines": 2,
+      "covered": 2,
+      "branches": 8,
+      "branchesCovered": 4,
+      "linePercent": 100.0,
+      "branchPercent": 50.0
+    },
+    "Vairas.VehicleManagement.Domain/Vehicle.cs": {
+      "lines": 1,
+      "covered": 1,
+      "branches": 0,
+      "branchesCovered": 0,
+      "linePercent": 100.0,
+      "branchPercent": 100.0
+    },
+    "Vairas.VehicleManagement.Persistance/PersistenceFailureException.cs": {
+      "lines": 1,
+      "covered": 1,
+      "branches": 0,
+      "branchesCovered": 0,
+      "linePercent": 100.0,
+      "branchPercent": 100.0
+    },
+    "Vairas.VehicleManagement.Persistance/VehicleDatabase.cs": {
+      "lines": 13,
+      "covered": 13,
+      "branches": 0,
+      "branchesCovered": 0,
+      "linePercent": 100.0,
+      "branchPercent": 100.0
+    },
+    "Vairas.VehicleManagement.Persistance/VehicleDbContext.cs": {
+      "lines": 2,
+      "covered": 2,
+      "branches": 0,
+      "branchesCovered": 0,
+      "linePercent": 100.0,
+      "branchPercent": 100.0
+    },
+    "Vairas.VehicleManagement.Persistance/VehicleModel.cs": {
+      "lines": 90,
+      "covered": 90,
+      "branches": 4,
+      "branchesCovered": 4,
+      "linePercent": 100.0,
+      "branchPercent": 100.0
+    }
+  }
+}
